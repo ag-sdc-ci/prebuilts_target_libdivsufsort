@@ -1,0 +1,60 @@
+package {
+    default_applicable_licenses: ["external_libdivsufsort_license"],
+}
+
+license {
+    name: "external_libdivsufsort_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-MIT",
+    ],
+    license_text: [
+        "LICENSE",
+    ],
+}
+
+prebuilt_apex {
+    name: "org.blisslabs.ag.libdivsufsort",
+    apex_name: "org.blisslabs.ag.libdivsufsort",
+    source_apex_name: "org.blisslabs.ag.libdivsufsort",
+    arch: {
+        x86_64: {
+            src: "org.blisslabs.ag.libdivsufsort.apex",
+        },
+    },
+    filename: "org.blisslabs.ag.libdivsufsort.apex",
+    prefer: true,
+    installable: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdivsufsort",
+    host_supported: true,
+    vendor_available: true,
+    product_available: true,
+    recovery_available: true,
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    export_include_dirs: [
+        "dev-src/include",
+    ],
+    srcs: ["src/lib/libdivsufsort.so"],
+}
+
+cc_prebuilt_library_shared {
+    name: "libdivsufsort64",
+    host_supported: true,
+    vendor_available: true,
+    product_available: true,
+    recovery_available: true,
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    export_include_dirs: [
+        "dev-src/include",
+    ],
+    srcs: ["src/lib/libdivsufsort64.so"],
+}

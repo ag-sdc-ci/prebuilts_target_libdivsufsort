@@ -1,0 +1,16 @@
+{
+	"provideLibs": [	
+		    "libdivsufsort-x86_64-v2.so",
+		    "libdivsufsort.so",
+		    "libdivsufsort64-x86_64-v2.so",
+		    "libdivsufsort64.so",
+		    "libdummy_libdivsufsort-x86_64-v2.so",
+		    "libdummy_libdivsufsort.so"
+	],
+	"requireLibs": [	
+		    "libc.so",
+		    "libdl.so",
+		    "libm.so"
+	],
+	"visible": true
+}

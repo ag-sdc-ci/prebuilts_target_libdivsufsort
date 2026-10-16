@@ -1,0 +1,13 @@
+{
+	"provideLibs": [	
+		    "libdivsufsort64-x86_64-v2.so",
+		    "libdivsufsort64.so",
+		    "libdummy_headers_libdivsufsort-x86_64-v2.so",
+		    "libdummy_headers_libdivsufsort.so",
+		    "libdummy_libdivsufsort_dev-x86_64-v2.so",
+		    "libdummy_libdivsufsort_dev.so",
+		    "libdummy_pkgconfig_libdivsufsort-x86_64-v2.so",
+		    "libdummy_pkgconfig_libdivsufsort.so"
+	],
+	"visible": true
+}

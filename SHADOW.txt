@@ -1,0 +1,6 @@
+shadow prebuilt repo: libdivsufsort (target)
+  upstream: external/libdivsufsort
+  api-level: 32 (branch 32-20261016)
+  blobs: org.blisslabs.ag.libdivsufsort.apex org.blisslabs.ag.libdivsufsort.dev.apex org.blisslabs.ag.libdivsufsort.doc.apex
+  dev-src: extracted dev payload + headers + root Android.bp
+  date: 2026-10-16
