@@ -38,9 +38,9 @@ cc_prebuilt_library_shared {
         "//apex_available:anyapex",
     ],
     export_include_dirs: [
-        "dev-src/include",
+        "include",
     ],
-    srcs: ["src/lib/libdivsufsort.so"],
+    srcs: ["lib64/libdivsufsort.so"],
 }
 
 cc_prebuilt_library_shared {
@@ -54,7 +54,7 @@ cc_prebuilt_library_shared {
         "//apex_available:anyapex",
     ],
     export_include_dirs: [
-        "dev-src/include",
+        "include",
     ],
-    srcs: ["src/lib/libdivsufsort64.so"],
+    srcs: ["lib64/libdivsufsort64.so"],
 }
